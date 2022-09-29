@@ -1,0 +1,13 @@
+configparser~=5.2.0
+setuptools~=63.4.2
+pandas~=1.4.2
+SQLAlchemy~=1.4.40
+openpyxl~=3.0.10
+tqdm~=4.64.0
+pyodbc~=4.0.34
+pyinstaller~=5.3
+xlsxwriter~=3.0.3
+Jinja2~=3.1.2
+python-dateutil~=2.8.2
+numpy~=1.23.2
+PySimpleGUI
