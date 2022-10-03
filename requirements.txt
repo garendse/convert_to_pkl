@@ -11,3 +11,5 @@ Jinja2~=3.1.2
 python-dateutil~=2.8.2
 numpy~=1.23.2
 PySimpleGUI
+IPython
+pywin32

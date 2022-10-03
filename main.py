@@ -1,6 +1,6 @@
 import PySimpleGUI as sg
 import pandas as pd
-
+from pandasgui import show
 
 def _get_excel_filenames():
     layout = [
@@ -17,7 +17,8 @@ def _get_excel_filenames():
             break
         if event == "Submit":
             return (values["-XLS-"], values["-WSN-"], values["-PKL-"])
-
+        if event == "Cancel":
+            exit(0)
 
 if __name__ == '__main__':
     xls_name, ws_name, pkl_name = _get_excel_filenames()
@@ -29,6 +30,9 @@ if __name__ == '__main__':
 
             print("Saving", pkl_name)
             df.to_pickle(pkl_name)
+
+            df = pd.read_pickle(pkl_name)
+            show(df)
 
             print("Done")
 
